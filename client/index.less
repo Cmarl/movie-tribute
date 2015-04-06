@@ -1,19 +1,71 @@
-body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+  color: #06d50c;
+  font-weight: bold;
+  background-image: url('/assets/pulp_fiction_movie_pictures_for_laptop.png');
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
+h1 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: #b60000;
 }
 
-#title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:250px;
+  width:350px;
+}
+
+#title, a, h3 {
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+}
+
+a {
+  color: rgba(169, 14, 14, 0.91);
+}
+
+#title {
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+p {
+  margin-left: 30px;
+  font-family: 'Cinzel', serif;
+  color: #aaaaaa;
+  background-color: rgba(0, 40, 0, 0.81);
+  border: 2px solid rgba(0, 185, 12, 0.73);
+}
+
+h3 {
+  color: #5bcf3e;
+  text-size: 35px;
+  margin-left: 120px;
+  margin-top: 60px;
+  text-decoration: underline;
+}
+
+li {
+  display: inline-block;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgba(0, 40, 0, 0.81);
+  border: 3px solid rgba(0, 185, 12, 0.73);
+  transition: transform .5s;
+}
+
+li:hover{
+  transform: skewX(10deg);
+  transform: rotateZ(10deg);
+  transform-origin: bottom left;
+  background-color: rgba(83, 200, 5, 0.88);
+  text-decoration: none;
 }
